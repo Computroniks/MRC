@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U?
+U 1 1 6023BC74
+P 2550 2200
+F 0 "U?" H 2021 2246 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 2021 2155 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2550 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2550 2200 50  0001 C CNN
+	1    2550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6023C99F
+P 2550 1500
+F 0 "#PWR?" H 2550 1350 50  0001 C CNN
+F 1 "+5V" H 2565 1673 50  0000 C CNN
+F 2 "" H 2550 1500 50  0001 C CNN
+F 3 "" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6023D0D8
+P 2550 2900
+F 0 "#PWR?" H 2550 2650 50  0001 C CNN
+F 1 "GND" H 2555 2727 50  0000 C CNN
+F 2 "" H 2550 2900 50  0001 C CNN
+F 3 "" H 2550 2900 50  0001 C CNN
+	1    2550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1500 2550 1600
+Wire Wire Line
+	2550 2800 2550 2900
+$Comp
+L Device:R R1
+U 1 1 6023F4A7
+P 4100 2550
+F 0 "R1" H 4030 2504 50  0000 R CNN
+F 1 "1K" H 4030 2595 50  0000 R CNN
+F 2 "" V 4030 2550 50  0001 C CNN
+F 3 "~" H 4100 2550 50  0001 C CNN
+	1    4100 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6023FFA8
+P 3400 3000
+F 0 "#PWR?" H 3400 2750 50  0001 C CNN
+F 1 "GND" H 3405 2827 50  0000 C CNN
+F 2 "" H 3400 3000 50  0001 C CNN
+F 3 "" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 602405FD
+P 4350 2550
+F 0 "#PWR?" H 4350 2400 50  0001 C CNN
+F 1 "+5V" H 4365 2723 50  0000 C CNN
+F 2 "" H 4350 2550 50  0001 C CNN
+F 3 "" H 4350 2550 50  0001 C CNN
+	1    4350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2900 3400 3000
+Text Label 3250 1900 0    50   ~ 0
+ENA
+Wire Wire Line
+	3150 1900 3250 1900
+$Comp
+L Device:LED D?
+U 1 1 602413D7
+P 3900 1250
+F 0 "D?" H 3893 995 50  0000 C CNN
+F 1 "LED" H 3893 1086 50  0000 C CNN
+F 2 "" H 3900 1250 50  0001 C CNN
+F 3 "~" H 3900 1250 50  0001 C CNN
+	1    3900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60242047
+P 4350 1250
+F 0 "D?" H 4343 995 50  0000 C CNN
+F 1 "LED" H 4343 1086 50  0000 C CNN
+F 2 "" H 4350 1250 50  0001 C CNN
+F 3 "~" H 4350 1250 50  0001 C CNN
+	1    4350 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60244E8F
+P 3900 1600
+F 0 "R2" H 3830 1554 50  0000 R CNN
+F 1 "330" H 3830 1645 50  0000 R CNN
+F 2 "" V 3830 1600 50  0001 C CNN
+F 3 "~" H 3900 1600 50  0001 C CNN
+	1    3900 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60245504
+P 4350 1600
+F 0 "R3" H 4280 1554 50  0000 R CNN
+F 1 "330" H 4280 1645 50  0000 R CNN
+F 2 "" V 4280 1600 50  0001 C CNN
+F 3 "~" H 4350 1600 50  0001 C CNN
+	1    4350 1600
+	-1   0    0    1   
+$EndComp
+Text Label 4000 1800 0    50   ~ 0
+IN1
+Text Label 4450 1800 0    50   ~ 0
+IN2
+Wire Wire Line
+	3900 1400 3900 1450
+Wire Wire Line
+	4350 1400 4350 1450
+Wire Wire Line
+	4450 1800 4350 1800
+Wire Wire Line
+	4350 1800 4350 1750
+Wire Wire Line
+	4000 1800 3900 1800
+Wire Wire Line
+	3900 1800 3900 1750
+Wire Wire Line
+	3900 1800 3900 2000
+Wire Wire Line
+	3900 2000 3150 2000
+Connection ~ 3900 1800
+Wire Wire Line
+	4350 1800 4350 2100
+Wire Wire Line
+	4350 2100 3150 2100
+Connection ~ 4350 1800
+Wire Wire Line
+	3900 1100 3900 1050
+Wire Wire Line
+	3900 1050 4350 1050
+Wire Wire Line
+	4350 1050 4350 1100
+$Comp
+L power:GND #PWR?
+U 1 1 60246D70
+P 4650 1150
+F 0 "#PWR?" H 4650 900 50  0001 C CNN
+F 1 "GND" H 4655 977 50  0000 C CNN
+F 2 "" H 4650 1150 50  0001 C CNN
+F 3 "" H 4650 1150 50  0001 C CNN
+	1    4650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1050 4650 1050
+Wire Wire Line
+	4650 1050 4650 1150
+Connection ~ 4350 1050
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60247781
+P 5050 2200
+F 0 "SW?" H 5050 2485 50  0000 C CNN
+F 1 "SW_Push" H 5050 2394 50  0000 C CNN
+F 2 "" H 5050 2400 50  0001 C CNN
+F 3 "~" H 5050 2400 50  0001 C CNN
+	1    5050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6024967D
+P 4700 2050
+F 0 "R?" H 4630 2004 50  0000 R CNN
+F 1 "1K" H 4630 2095 50  0000 R CNN
+F 2 "" V 4630 2050 50  0001 C CNN
+F 3 "~" H 4700 2050 50  0001 C CNN
+	1    4700 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6024A8D0
+P 4700 1800
+F 0 "#PWR?" H 4700 1650 50  0001 C CNN
+F 1 "+5V" H 4715 1973 50  0000 C CNN
+F 2 "" H 4700 1800 50  0001 C CNN
+F 3 "" H 4700 1800 50  0001 C CNN
+	1    4700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2200 4700 2200
+Connection ~ 4700 2200
+Wire Wire Line
+	4700 2200 4850 2200
+Wire Wire Line
+	4700 1900 4700 1800
+$Comp
+L power:GND #PWR?
+U 1 1 6024B62B
+P 5250 2300
+F 0 "#PWR?" H 5250 2050 50  0001 C CNN
+F 1 "GND" H 5255 2127 50  0000 C CNN
+F 2 "" H 5250 2300 50  0001 C CNN
+F 3 "" H 5250 2300 50  0001 C CNN
+	1    5250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2200 5250 2300
+$Comp
+L Device:R_POT RV?
+U 1 1 6024C3DC
+P 4800 2450
+F 0 "RV?" V 4685 2450 50  0000 C CNN
+F 1 "R_POT" V 4594 2450 50  0000 C CNN
+F 2 "" H 4800 2450 50  0001 C CNN
+F 3 "~" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 2300 3150 2300
+Wire Wire Line
+	4250 2550 4350 2550
+Wire Wire Line
+	4650 2450 4600 2450
+Wire Wire Line
+	4600 2450 4600 2550
+Wire Wire Line
+	4600 2550 4350 2550
+Connection ~ 4350 2550
+Wire Wire Line
+	4950 2450 5100 2450
+Wire Wire Line
+	5100 2450 5100 2300
+Wire Wire Line
+	5100 2300 5250 2300
+Connection ~ 5250 2300
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60251D0E
+P 3400 2700
+F 0 "SW?" V 3354 2848 50  0000 L CNN
+F 1 "SW_Push" V 3445 2848 50  0000 L CNN
+F 2 "" H 3400 2900 50  0001 C CNN
+F 3 "~" H 3400 2900 50  0001 C CNN
+	1    3400 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2550 3950 2400
+Wire Wire Line
+	3950 2400 3400 2400
+Wire Wire Line
+	3400 2500 3400 2400
+Connection ~ 3400 2400
+Wire Wire Line
+	3400 2400 3150 2400
+$EndSCHEMATC
