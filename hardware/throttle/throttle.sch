@@ -283,4 +283,12 @@ Wire Wire Line
 Connection ~ 3400 2400
 Wire Wire Line
 	3400 2400 3150 2400
+Text Notes 10550 7650 0    50   ~ 0
+1.0.0
+Text Notes 8150 7650 0    50   ~ 0
+10/02/2021
+Text Notes 7350 7500 0    50   ~ 0
+Throttle Board
+Text Notes 5450 1300 0    50   ~ 0
+Info:\nENA, IN1 and IN2 are to connect\nto the relevantly labelled pins on\nthe L298N board.
 $EndSCHEMATC
