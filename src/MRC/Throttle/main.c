@@ -1,6 +1,6 @@
 /*
  * MRC.c
- * Version: 1.0.1
+ * Version: 1.0.2
  *
  * Copyright (c) 2021 Matthew Nickson, All rights reserved
  */ 
@@ -27,7 +27,6 @@ int main(void)
 	int pressed = 0;
 	int pwmOutput;
 	/*Set IO*/
-	DDRB |= (1 << PB2); //Pin PB2 as output
 	DDRB |= (1 << PB1); //Pin PB1 as output
 	DDRB |= (1 << PB0); //Pin PB0 as output
 	DDRB &= ~(1 << PINB3); //Pin PB3 as input
@@ -75,14 +74,12 @@ int main(void)
 		if ((pressed == 1) & (rotDirection == 0))
 		{
 			PORTB |= (1 << PB1);
-			PORTB &= ~(1 << PB2);
 			rotDirection = 1;
 			_delay_ms(20);			
 		}
 		if ((pressed == 0) & (rotDirection == 1))
 		{
 			PORTB &= ~(1 << PB1);
-			PORTB |= (1 << PB2);
 			rotDirection = 0;
 			_delay_ms(20);
 		}
