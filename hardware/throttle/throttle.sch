@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 10550 7650 0    50   ~ 0
-1.2.2
+1.2.4
 Text Notes 8150 7650 0    50   ~ 0
 10/02/2021
 Text Notes 7350 7500 0    50   ~ 0
@@ -746,10 +746,10 @@ Connection ~ 2900 2750
 Wire Wire Line
 	2900 2750 2600 2750
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J3
 U 1 1 602CAD0F
 P 3600 4500
-F 0 "J?" H 3680 4492 50  0000 L CNN
+F 0 "J3" H 3680 4492 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 3680 4401 50  0000 L CNN
 F 2 "" H 3600 4500 50  0001 C CNN
 F 3 "~" H 3600 4500 50  0001 C CNN
