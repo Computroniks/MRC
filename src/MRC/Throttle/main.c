@@ -1,8 +1,8 @@
 /*
  * MRC.c
+ * Version: 1.0.1
  *
- * Created: 08/02/2021 16:59:11
- * Author : Matthew Nickson
+ * Copyright (c) 2021 Matthew Nickson, All rights reserved
  */ 
 
 #define F_CPU 8000000UL //Set clock speed 8MHz
